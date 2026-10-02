@@ -1,19 +1,19 @@
 class BluefinReviewDev < Formula
   desc "Personal development builds of Review"
   homepage "https://github.com/joshyorko/review"
-  version "0.20261001210716"
+  version "0.20261002153100"
   license "Apache-2.0"
   depends_on :linux
   depends_on "apptainer"
   depends_on "squashfuse"
   depends_on "gh"
   on_arm do
-    url "https://github.com/joshyorko/review/releases/download/dev-0.20261001210716-483b5e8cb956/bluefin-review-dev-aarch64.tar.gz"
-    sha256 "0591b0468a060da7898ad57380a2174a71f0ffd7e9085c09560e16dcc104ecd5"
+    url "https://github.com/joshyorko/review/releases/download/dev-0.20261002153100-7ba06b600828/bluefin-review-dev-aarch64.tar.gz"
+    sha256 "b15bab80a6f0fa3b267015872f369cf8a50205d3c327bb51cc8ff34970f70c07"
   end
   on_intel do
-    url "https://github.com/joshyorko/review/releases/download/dev-0.20261001210716-483b5e8cb956/bluefin-review-dev-x86_64.tar.gz"
-    sha256 "4ed9aecf8aa2ea523a458ba949a700492dc3f41a0f7c2da7715cb9bd9b3ee832"
+    url "https://github.com/joshyorko/review/releases/download/dev-0.20261002153100-7ba06b600828/bluefin-review-dev-x86_64.tar.gz"
+    sha256 "bd096c736a37f8dc5ea101f1e29bd594e168eac440775f1be67566be34b48f77"
   end
   def install
     libexec.install "launcher", "build.json", "build.txt"
