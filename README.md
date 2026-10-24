@@ -1,16 +1,14 @@
-# Review development tap
+# Review
 
-Personal Bluefin Review builds from exact commits in joshyorko/review.
+This development tap is retired. Review is available from [joshyorko/homebrew-tools](https://github.com/joshyorko/homebrew-tools).
 
-On Linux:
+Replace the development package with the stable package:
 
 ```sh
-brew install joshyorko/review-dev/bluefin-review-dev
-bluefin review owner/repo
+brew uninstall bluefin-review-dev
+brew untap joshyorko/review-dev
+brew install joshyorko/tools/review
+review owner/repo
 ```
 
-After the personal package workflow succeeds, run `brew update` and
-`brew upgrade bluefin-review-dev`. Startup displays the source ref and commit.
-
-This channel is separate from `ublue-os/experimental-tap/bluefin-contributor-tools`.
-Uninstall one before installing the other; both provide `bluefin`.
+Stable releases are published in [joshyorko/review](https://github.com/joshyorko/review/releases).
